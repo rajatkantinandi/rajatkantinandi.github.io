@@ -1,0 +1,134 @@
+body {
+  display: grid;
+  grid-template-columns: 4.5fr 6.5fr;
+  margin: 0;
+  padding: 0;
+}
+.sidebar {
+  background: #ddf;
+  border-right: 2px solid indigo;
+  padding: 10px;
+  padding-bottom: 150px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+}
+.pic {
+  border-radius: 50%;
+  border: 2px solid indigo;
+}
+.title {
+  align-self: flex-start;
+  padding: 0.3em 0 0 0.7em;
+  font-weight: bold;
+}
+.name {
+  font-size: 1.6em;
+}
+.dob {
+  color: #668;
+}
+.profession {
+  font-size: 1em;
+  color: #445;
+  padding: 5px;
+  border-radius: 15px;
+  background: #eef;
+  border: 1px solid grey;
+  margin: 10px 5px;
+  box-shadow: 0px 0px 10px -2px #112;
+  text-align: center;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  background: #eef;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0px 0px 10px -2px #112;
+  border: none;
+  flex-wrap: wrap;
+}
+fieldset legend {
+  background: #224;
+  padding: 3px 20px;
+  border: 2px solid #221;
+  border-radius: 10px;
+  color: #eef;
+  font-weight: bold;
+}
+ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+ul {
+  padding-inline-start: 5px;
+  margin-block-start: 3px;
+  margin-block-end: 3px;
+}
+ul li div {
+  margin-left: 5px;
+}
+ul.roles {
+  padding-inline-start: inherit;
+  margin-block-start: inherit;
+  margin-block-end: inherit;
+  list-style: inherit;
+}
+ul.skills li {
+  justify-content: space-between;
+}
+ul.roles li {
+  list-style: inherit;
+}
+.type {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #445;
+}
+a {
+  color: #332;
+}
+.points {
+  width: 60%;
+  height: 5px;
+  border-radius: 10px;
+  background: #fff;
+  border: 2px solid indigo;
+  background-repeat: no-repeat;
+  margin-top: 8px;
+}
+.points .fill {
+  background: #2a2;
+  width: 20%;
+  height: 5px;
+  border-radius: 10px;
+  margin-left: 0;
+}
+.employer {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+.period {
+  margin-left: 50px;
+  color: #211;
+}
+.work,
+.education,
+.personal,
+.projects {
+  margin: 15px;
+}
+.role {
+  margin-left: 10px;
+}
+.work-info {
+  background: #def;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
