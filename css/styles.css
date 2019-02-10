@@ -9,6 +9,7 @@ body {
   border-right: 2px solid indigo;
   padding: 10px;
   padding-bottom: 150px;
+  padding-top: 30px;
 }
 .header {
   display: flex;
@@ -109,6 +110,9 @@ a {
   border-radius: 10px;
   margin-left: 0;
 }
+.content {
+  margin-top: 30px;
+}
 .employer {
   font-size: 1.2em;
   font-weight: bold;
@@ -125,10 +129,20 @@ a {
   margin: 15px;
 }
 .role {
-  margin-left: 10px;
+  padding-left: 10px;
 }
 .work-info {
   background: #def;
   border-radius: 10px;
   padding: 5px 10px;
+}
+@media (max-width: 840px) {
+  body {
+    grid-template-columns: 12fr;
+  }
+  .sidebar {
+    padding-bottom: 20px;
+    border-bottom: 2px solid indigo;
+    border-right: none;
+  }
 }
