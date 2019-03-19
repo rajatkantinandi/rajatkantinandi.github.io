@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CV of Rajat Kanti Nandi</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="sidebar">
@@ -26,7 +32,7 @@
         <legend>Contact Info</legend>
         <ul class="contacts">
           <li>
-            <ion-icon name="home"></ion-icon>
+            <i class="fas fa-map-marker-alt"></i>
             <div class="type">Address:</div>
             <div class="info">
               Ground Floor, Shantineer Apartment, Jaihind Pally, Barrackpore –
@@ -34,12 +40,12 @@
             </div>
           </li>
           <li>
-            <ion-icon name="call"></ion-icon>
+            <i class="fas fa-phone"></i>
             <div class="type">Ph no:</div>
             <div class="info">+91-8336070469</div>
           </li>
           <li>
-            <ion-icon name="mail"></ion-icon>
+            <i class="fas fa-envelope"></i>
             <div class="type">Email:</div>
             <div class="info">
               <a href="mailto:rajatkantinandi1993@gmail.com?subject=Hi, Rajat"
@@ -48,7 +54,7 @@
             </div>
           </li>
           <li>
-            <ion-icon name="logo-twitter"></ion-icon>
+            <i class="fab fa-twitter"></i>
             <div class="type">Twitter:</div>
             <div class="info">
               <a href="https://twitter.com/rajatkantinandi" target="_blank"
@@ -57,7 +63,7 @@
             </div>
           </li>
           <li>
-            <ion-icon name="logo-github"></ion-icon>
+            <i class="fab fa-github"></i>
             <div class="type">GitHub:</div>
             <div class="info">
               <a href="https://github.com/rajatkantinandi" target="_blank"
@@ -66,11 +72,20 @@
             </div>
           </li>
           <li>
-            <ion-icon name="logo-codepen"></ion-icon>
+            <i class="fab fa-codepen"></i>
             <div class="type">Codepen:</div>
             <div class="info">
               <a href="https://codepen.io/rajatkantinandi" target="_blank"
                 >codepen.io/rajatkantinandi</a
+              >
+            </div>
+          </li>
+          <li>
+            <i class="fab fa-hackerrank"></i>
+            <div class="type">HackerRank:</div>
+            <div class="info">
+              <a href="https://www.hackerrank.com/rajatkn" target="_blank"
+                >hackerrank.com/rajatkn</a
               >
             </div>
           </li>
@@ -81,7 +96,7 @@
         <ul class="skills">
           <li>
             <div class="type">Javascript</div>
-            <div class="points" data-point="100"><div class="fill"></div></div>
+            <div class="points" data-point="95"><div class="fill"></div></div>
           </li>
           <li>
             <div class="type">React</div>
@@ -97,11 +112,11 @@
           </li>
           <li>
             <div class="type">CSS3</div>
-            <div class="points" data-point="95"><div class="fill"></div></div>
+            <div class="points" data-point="90"><div class="fill"></div></div>
           </li>
           <li>
             <div class="type">HTML5</div>
-            <div class="points" data-point="95"><div class="fill"></div></div>
+            <div class="points" data-point="90"><div class="fill"></div></div>
           </li>
           <li>
             <div class="type">Node/Express</div>
@@ -247,6 +262,16 @@
           </li>
           <li>
             <div class="type">
+              <a href="https://github.com/rajatkantinandi/React-Native-ChatApp"
+                >React-Native-ChatApp</a
+              >:
+            </div>
+            <div class="info">
+              ChatApp built using React Native with pusher/ChatKit API
+            </div>
+          </li>
+          <li>
+            <div class="type">
               <a href="https://expo.io/@rajatkn/poll-in">Poll-in Native</a>:
             </div>
             <div class="info">
@@ -329,7 +354,11 @@
         </ul>
       </fieldset>
     </div>
-    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-    <script src="js/index.js"></script>
+    <script>
+      document.querySelectorAll(".points").forEach(elem => {
+        const point = elem.getAttribute("data-point") + "%";
+        elem.querySelector(".fill").style.width = point;
+      });
+    </script>
   </body>
 </html>
