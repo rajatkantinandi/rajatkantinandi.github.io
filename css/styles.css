@@ -90,6 +90,9 @@ ul.roles li {
   font-size: 1.1em;
   color: #445;
 }
+.type a {
+  text-decoration-style: dotted;
+}
 .content li {
   align-items: center;
   padding: 5px 0;
@@ -98,10 +101,10 @@ ul.roles li {
   background-color: #e1e1ff;
 }
 .project-work .type{
-  flex: 0 0 120px;
+  flex: 0 0 140px;
 }
 a {
-  color: #332;
+  color: rgb(9, 43, 116);
 }
 .points {
   width: 60%;
@@ -125,10 +128,9 @@ a {
 .employer {
   font-size: 1.2em;
   font-weight: bold;
-  text-align: center;
 }
 .period {
-  margin-left: 50px;
+  margin-left: 20px;
   color: #211;
 }
 .work,
@@ -147,6 +149,10 @@ a {
 }
 .work-info ul li {
   justify-content: space-between;
+}
+
+.certificates .type {
+  margin-top: 5px;
 }
 
 @media only screen and (max-width: 840px) {
