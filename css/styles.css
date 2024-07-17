@@ -129,6 +129,9 @@ a {
   font-size: 1.2em;
   font-weight: bold;
 }
+.employer a {
+  color: inherit;
+}
 .period {
   margin-left: 20px;
   color: #211;
